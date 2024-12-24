@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "react_native_crash",
-    "slug": "react_native_crash",
+    "name": "Flora",
+    "slug": "flora",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "flora",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
