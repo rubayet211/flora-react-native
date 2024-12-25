@@ -5,19 +5,12 @@ import { Link } from 'expo-router';
 
 export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <Text>FLora!</Text>
+    <View className='flex-1 items-center justify-center bg-primary'>
+      <Text className='text-3xl'>FLora!</Text>
       <StatusBar style="auto" />
-      <Link href="/profile" style={{ color: 'blue'}}>Go To Profile</Link>
+      <Link href="/(tabs)/profile" style={{ color: 'blue'}}>Go To Profile</Link>
+      <Link href="/(tabs)/home" style={{ color: 'red'}}>Go To Home</Link>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
- container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
- }
-});
