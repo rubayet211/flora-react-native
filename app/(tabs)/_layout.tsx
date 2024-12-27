@@ -6,9 +6,9 @@ import { icons } from '@/constants'
 
 const TabIcon = ({icon, color, name, focused}: {icon: any, color: string, name: string, focused: boolean}) => {
     return (
-        <View className='items-center justify-center m-4 gap-2'>
+        <View className='items-center justify-center mt-7 gap-2'>
             <Image source={icon} resizeMode="contain" resizeMethod='scale' tintColor={color} className='w-6 h-6' />
-            <Text className={`${focused ? 'font-psemibold' : 'font-pregular'} text-xs`} style={{color: color}}>{name}</Text>
+            <Text className={`${focused ? 'font-psemibold' : 'font-pregular'} text-xs text-nowrap w-full`} style={{color: color}}>{name}</Text>
         </View>
     )
 }
@@ -25,7 +25,7 @@ const TabsLayout = () => {
             backgroundColor: "#161622",
             borderTopWidth: 1,
             borderTopColor: "#232533",
-            height: 60
+            height: 60,
         }
 
     }}
